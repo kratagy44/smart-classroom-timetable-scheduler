@@ -1,0 +1,19 @@
+# Dependencies and builds
+node_modules/
+dist/
+
+# Secrets (never upload)
+.env
+
+# Logs and editor / OS files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.claude/
+
+# Files of a different project (not part of this repo)
+Drug Inventory Project Files/
+
+# Word lock files
+~$*
