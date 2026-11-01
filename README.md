@@ -11,6 +11,12 @@
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+**[Features](#-features) · [Screenshots](#-screenshots) · [How it works](#-how-the-timetable-algorithm-works) · [Getting started](#-getting-started) · [Team](#-team)**
+
+<br/>
+
+<img src="docs/screenshots/admin-dashboard.png" alt="Admin dashboard" width="90%"/>
+
 </div>
 
 ---
@@ -44,8 +50,32 @@ For a deep dive into the design, read **[ARCHITECTURE.md](ARCHITECTURE.md)**.
 | 👀 | **Three views** | See the timetable by class, by teacher or by room. |
 | 📄 | **PDF export** | Preview the timetable as a PDF, then download or print it. |
 | 🏫 | **Free Rooms** | See free and busy rooms for any period — or **right now**. |
-| 🏠 | **Today dashboard** | Teachers and students see today's lectures, with the current one highlighted. |
+| 🏠 | **Today dashboard** | Teachers and students see today's lectures (current one highlighted), and the next working day on holidays. |
+| 🚀 | **One-click demo login** | Admin, Teacher and Student buttons on the login page — perfect for a quick demo. |
 | 📱 | **Mobile friendly** | Works on phones, tablets and computers. |
+
+---
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td width="50%" align="center"><b>Login (with one-click demo accounts)</b><br/><br/><img src="docs/screenshots/login.png" alt="Login page"/></td>
+    <td width="50%" align="center"><b>Generate the timetable in one click</b><br/><br/><img src="docs/screenshots/generate.png" alt="Generate page"/></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><b>Clash-free weekly timetable</b><br/><br/><img src="docs/screenshots/timetable.png" alt="Timetable view"/></td>
+    <td width="50%" align="center"><b>Find a free room</b><br/><br/><img src="docs/screenshots/free-rooms.png" alt="Free rooms page"/></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><b>Manage subjects, teachers, classes and rooms</b><br/><br/><img src="docs/screenshots/subjects.png" alt="Subjects page"/></td>
+    <td width="50%" align="center"><b>Works on phones too</b><br/><br/>
+      <img src="docs/screenshots/mobile-login.png" alt="Mobile login" width="30%"/>
+      <img src="docs/screenshots/mobile-dashboard.png" alt="Mobile dashboard" width="30%"/>
+      <img src="docs/screenshots/mobile-timetable.png" alt="Mobile timetable" width="30%"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -150,6 +180,8 @@ Open **<http://localhost:5173>** in your browser. 🎉
 | Teacher | `anil.sharma@college.edu` | `teacher123` |
 | Student | `cse2a@college.edu` | `student123` |
 
+💡 Tip: on the login page just click **Admin**, **Teacher** or **Student** under *Try a demo account*, then **Login**.
+
 All 8 sample teachers use `teacher123`. Students `cse2a`, `cse2b` and `cse3a` `@college.edu` use `student123`.
 
 ### 📦 Run everything as one server (optional)
@@ -214,7 +246,7 @@ smart-classroom-timetable-scheduler/
 │   ├── seed/                Sample data script
 │   └── services/
 │       └── scheduler.js     ⭐ The timetable algorithm
-├── docs/                    Project synopsis
+├── docs/                    Project synopsis and screenshots
 ├── ARCHITECTURE.md          Full design explanation
 └── README.md
 ```
@@ -252,3 +284,10 @@ smart-classroom-timetable-scheduler/
 ## 📜 License
 
 This project is released under the [MIT License](LICENSE).
+
+<div align="center">
+<br/>
+
+Made with ❤️ by the Smart Timetable team · ⭐ Star this repo if you found it useful!
+
+</div>

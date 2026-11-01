@@ -26,3 +26,26 @@ export function currentPeriod(periodTimes) {
   }
   return null;
 }
+
+// "Good morning" / "Good afternoon" / "Good evening"
+export function greeting() {
+  const hour = new Date().getHours();
+  if (hour < 12) return "Good morning";
+  if (hour < 17) return "Good afternoon";
+  return "Good evening";
+}
+
+// "Sunday, 1 November 2026"
+export function longDate() {
+  return new Date().toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+}
+
+// The next working day after "day", e.g. ("Sat", ["Mon".."Fri"]) -> "Mon".
+export function nextWorkingDay(workingDays, day) {
+  const start = DAY_NAMES.indexOf(day);
+  for (let i = 1; i <= 7; i++) {
+    const next = DAY_NAMES[(start + i) % 7];
+    if (workingDays.includes(next)) return next;
+  }
+  return null;
+}

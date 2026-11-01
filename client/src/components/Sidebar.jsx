@@ -69,6 +69,9 @@ export default function Sidebar() {
         <button className="icon-button" onClick={() => setOpen(true)} aria-label="Open menu">
           <Icon name="menu" size={22} />
         </button>
+        <span className="brand-logo">
+          <Icon name="calendar" size={16} />
+        </span>
         <span className="brand-text">Smart Timetable</span>
       </header>
 

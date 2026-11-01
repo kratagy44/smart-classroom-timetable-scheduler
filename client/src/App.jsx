@@ -27,7 +27,7 @@ export default function App() {
   return (
     <div className={user ? "layout" : ""}>
       {user && <Sidebar />}
-      <main className="container">
+      <main className={user ? "container" : ""}>
         <Routes>
           <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
 
